@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#clickButton {
+    display: none; /* Hide button initially */
+}
