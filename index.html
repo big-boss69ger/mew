@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click the Button Game</title>
+    <title>Clicking Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Click the Button Game!</h1>
-        <button id="clickButton">Click Me!</button>
-        <h2>Score: <span id="score">0</span></h2>
-        <h3 id="timer">Time Left: 30 seconds</h3>
-        <button id="startButton">Start Game</button>
+
+    <div class="game-container">
+        <h1>Clicking Game</h1>
+        <p>Click the button as many times as you can in the given time!</p>
+
+        <div id="score">Score: 0</div>
+        <div id="highScore">High Score: 0</div>
+        <button id="clickButton" onclick="increaseScore()">Click me!</button>
+
+        <p id="timer">Time left: 10</p>
+        <button id="startButton" onclick="startGame()">Start Game</button>
+
+        <div id="gameOver" class="hidden">
+            <p>Game Over!</p>
+            <p>Your final score is: <span id="finalScore"></span></p>
+            <button onclick="resetGame()">Play Again</button>
+        </div>
     </div>
-    <script src="script.js"></script>
+
+    <script src="game.js"></script>
 </body>
 </html>
